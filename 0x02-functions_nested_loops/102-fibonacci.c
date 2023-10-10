@@ -12,7 +12,7 @@ int main(void)
 
 	int i = 0;
 
-	long int a = 0, b = 1, next;
+	long int num1 = 0, num2 = 1, n;
 
 
 
@@ -20,13 +20,13 @@ int main(void)
 
 	{
 
-		next = a + b;
+		n = num1 + num2;
 
-		a = b;
+		num1 = num2;
 
-		b = next;
+		num2 = n;
 
-		printf("%lu", next);
+		printf("%lu", n);
 
 
 
