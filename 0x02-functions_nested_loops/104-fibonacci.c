@@ -34,9 +34,9 @@ int main(void)
 		printf(", %lu", after1 + (after2 / l));
 		printf("%lu", after2 % l);
 		after1 = after1 + before1;
-		befer1 = after1 - before1;
-		after2 = aftre2 + before2;
-		befer2 = after2 - before2;
+		before1 = after1 - before1;
+		after2 = after2 + before2;
+		before2 = after2 - before2;
 	}
 	printf("\n");
 	return (0);
