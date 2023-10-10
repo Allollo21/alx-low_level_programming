@@ -10,27 +10,27 @@ int main(void)
 
 {
 
-	int a = 0, b = 1, next = 0;
+	int num1 = 0, num2 = 1, n = 0;
 
 	int sum = 0;
 
 
 
-	while (next < 4000000)
+	while (n < 4000000)
 
 	{
 
-		next = a + b;
+		n = num1 + num2;
 
-		a = b;
+		num1 = num2;
 
-		b = next;
+		num2 = n;
 
 
 
-		if (next % 2 == 0)
+		if (n % 2 == 0)
 
-			sum += next;
+			sum += n;
 
 	}
 
