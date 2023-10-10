@@ -32,11 +32,11 @@ int main(void)
 	for (i = 92; i < 99; ++i)
 	{
 		printf(", %lu", after1 + (after2 / l));
-		printf("%lu", aftre2 % l);
-		after1 = after1 + befer1;
-		befer1 = after1 - befer1;
-		after2 = aftre2 + befer2;
-		befer2 = after2 - befer2;
+		printf("%lu", after2 % l);
+		after1 = after1 + before1;
+		befer1 = after1 - before1;
+		after2 = aftre2 + before2;
+		befer2 = after2 - before2;
 	}
 	printf("\n");
 	return (0);
