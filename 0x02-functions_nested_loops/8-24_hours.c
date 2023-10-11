@@ -9,29 +9,29 @@ void jack_bauer(void)
 
 {
 
-	int a;
+	int num1;
 
-	int b;
+	int num2;
 
 
 
-	for (a = 0; a <= 23; a++)
+	for (num1 = 0; num1 <= 23; num1++)
 
 	{
 
-		for (b = 0; b <= 59; b++)
+		for (num2 = 0; num2 <= 59; num2++)
 
 		{
 
-			_putchar (a / 10 + '0');
+			_putchar (num1 / 10 + '0');
 
-			_putchar (a % 10 + '0');
+			_putchar (num1 % 10 + '0');
 
 			_putchar (':');
 
-			_putchar (b / 10 + '0');
+			_putchar (num2 / 10 + '0');
 
-			_putchar (b % 10 + '0');
+			_putchar (num2 % 10 + '0');
 
 			_putchar ('\n');
 
