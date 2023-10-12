@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- *print_numbers- a function that prints the numbers, from 0 to 9
+ * print_most_numbers- prints the numbers, from 0 to 9 within 2 and 4
  *
- *Return: print to stdout the alphabet, in lowercase, followed by a new line.
+ * Return: from 0 to 9 within 2 and 4, followed by a new line.
  */
 
-void print_numbers(void)
+void print_most_numbers(void)
 {
 	int i;
 
