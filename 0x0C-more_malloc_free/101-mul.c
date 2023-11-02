@@ -3,9 +3,9 @@
 #include <stdlib.h>
 
 /**
- *main - multiplies two positive numbers
- *@argc: number of arguments
- *@argv: array of arguments
+ *main - Multiplies two positive numbers
+ *@argc: Number of arguments
+ *@argv: Array of arguments
  *Return: 0 on success, 98 on error
  */
 int main(int argc, char *argv[])
@@ -16,7 +16,7 @@ int main(int argc, char *argv[])
 	if (argc != 3)
 	{
 		printf("Error\n");
-		exit(98);
+		return (98);
 	}
 
 	for (i = 1; i < argc; i++)
@@ -26,7 +26,7 @@ int main(int argc, char *argv[])
 			if (argv[i][j] < '0' || argv[i][j] > '9')
 			{
 				printf("Error\n");
-				exit(98);
+				return (98);
 			}
 		}
 	}
