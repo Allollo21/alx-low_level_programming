@@ -1,10 +1,12 @@
 #include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
 
 /**
  *main - multiplies two positive numbers
- *@argc: n arguments
- *@argv: args
- *Return: int
+ *@argc: number of arguments
+ *@argv: array of arguments
+ *Return: 0 on success, 98 on error
  */
 int main(int argc, char *argv[])
 {
@@ -21,7 +23,7 @@ int main(int argc, char *argv[])
 	{
 		for (j = 0; argv[i][j] != '\0'; j++)
 		{
-			if (argv[i][j] > 57 || argv[i][j] < 48)
+			if (argv[i][j] < '0' || argv[i][j] > '9')
 			{
 				printf("Error\n");
 				exit(98);
@@ -29,7 +31,7 @@ int main(int argc, char *argv[])
 		}
 	}
 
-	mul = atol(argv[1]) * atol(argv[2]);
+	mul = strtoul(argv[1], NULL, 10) * strtoul(argv[2], NULL, 10);
 	printf("%lu\n", mul);
 	return (0);
 }
