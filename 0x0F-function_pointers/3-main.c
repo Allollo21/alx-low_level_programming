@@ -1,12 +1,13 @@
 #include "function_pointers.h"
-#include <stdio.h>
 #include <stdlib.h>
+#include <stdio.h>
 #include "3-calc.h"
-
 /**
- *main - main func
- *@argc: number of args
- *@argv: array of pointers
+ * main - Prints the result
+ * @argc: The number of args
+ * @argv: An array of pointers to the args
+ *
+ * Return: Always 0.
  */
 int main(int __attribute__((__unused__)) argc, char *argv[])
 {
@@ -29,13 +30,15 @@ int main(int __attribute__((__unused__)) argc, char *argv[])
 		exit(99);
 	}
 
-	if ((*op == '/' && num2 == 0) || (*op == '%' && num2 == 0))
+	if ((*op == '/' && num2 == 0) ||
+	    (*op == '%' && num2 == 0))
 	{
 		printf("Error\n");
 		exit(100);
 	}
 
-	printf("%i\n", get_op_func(op)(num1.num2));
+	printf("%d\n", get_op_func(op)(num1, num2));
 
 	return (0);
+}
 }
